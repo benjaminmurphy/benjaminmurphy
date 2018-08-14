@@ -13,8 +13,14 @@ export default () => (
     <link rel="stylesheet" href="https://use.typekit.net/zyj0uow.css" />
 
     <style jsx global>{`
-      body {
-        font-family: niveau-grotesk-small-caps, sans-serif;
+      .header {
+        font-family: 'niveau-grotesk-small-caps', sans-serif;
+        font-style: normal;
+        font-weight: 200;
+      }
+
+      .paragraph {
+        font-family: 'mrs-eaves-roman-lining', serif;
         font-style: normal;
         font-weight: 300;
       }

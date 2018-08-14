@@ -17,6 +17,10 @@ export default () => (
 
     `}</style>
 
-    <span>Made by Benjamin Murphy. All rights reserved. Source available <a href='https://github.com/benjaminmurphy/benjaminmurphy'>here</a>.</span>
+    <span className='header'>
+      Made by Benjamin Murphy.
+      All rights reserved.
+      Source available <a href='https://github.com/benjaminmurphy/benjaminmurphy'>here</a>.
+    </span>
   </div>
 );

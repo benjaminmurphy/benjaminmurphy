@@ -33,13 +33,13 @@ export default () => (
         <div className='about'>
           <h1>About</h1>
 
-          <p>
+          <p className='paragraph'>
             I'm an engineer, photographer, and aspiring lawyer, currently located in Providence, Rhode Island.
             At the moment, I am particularly interested in privacy and security, distributed systems, and machine
             learning.
           </p>
 
-          <p>
+          <p className='paragraph'>
             I'm currently looking for full-time opportunities starting in Fall 2019. If you're working on something
             cool, let me know at <a href='mailto:ben@benjaminmurphy.me'>ben@benjaminmurphy.me</a>!
           </p>
