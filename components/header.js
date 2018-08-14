@@ -14,7 +14,7 @@ export default () => (
         width: 100%;
         border-bottom: 1px solid black;
 
-        margin: 0;
+        margin: 5px 0 30px 0;
         padding: 0;
       }
 

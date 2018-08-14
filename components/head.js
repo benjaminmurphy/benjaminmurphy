@@ -18,6 +18,10 @@ export default () => (
         font-style: normal;
         font-weight: 300;
       }
+
+      html, body, div#__next {
+        height: 100%;
+      }
     `}</style>
 
   </Head>
