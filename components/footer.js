@@ -6,8 +6,9 @@ export default () => (
         bottom: 0px;
 
         width: 100%;
-        min-height: 30px;
-        border-top: 1px solid black;
+        line-height: 30px;
+        vertical-align: middle;
+        height: 30px;
       }
 
       span {
@@ -17,7 +18,7 @@ export default () => (
 
     `}</style>
 
-    <span className='header'>
+    <span className='raleway header'>
       Made by Benjamin Murphy.
       All rights reserved.
       Source available <a href='https://github.com/benjaminmurphy/benjaminmurphy'>here</a>.

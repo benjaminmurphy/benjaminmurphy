@@ -12,17 +12,23 @@ export default () => (
 
     <link rel="stylesheet" href="https://use.typekit.net/zyj0uow.css" />
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i|Raleway:200,200i" />
+
     <style jsx global>{`
-      .header {
+      .niveau {
         font-family: 'niveau-grotesk-small-caps', sans-serif;
-        font-style: normal;
-        font-weight: 200;
       }
 
-      .paragraph {
+      .eaves {
         font-family: 'mrs-eaves-roman-lining', serif;
-        font-style: normal;
-        font-weight: 300;
+      }
+
+      .cormorant {
+        font-family: 'Cormorant Garamond', serif;
+      }
+
+      .raleway {
+        font-family: 'Raleway', sans-serif;
       }
 
       html, body, div#__next {
