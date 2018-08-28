@@ -1,40 +1,56 @@
 import Head from 'next/head';
 
-export default () => (
-  <Head>
-    <title>benjamin murphy</title>
+export default ({ renderBackground = true }) => {
+  const bodyStyle = renderBackground ? `
+    body {
+      background-image: url('/static/bamboo.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  ` : `
+        body {
+          background-color: #fff;
+        }
+  `;
 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossOrigin="anonymous" />
+  return (
+    <Head>
+      <title>benjamin murphy</title>
 
-    <link rel="stylesheet" href="https://use.typekit.net/zyj0uow.css" />
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossOrigin="anonymous" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i|Raleway:200,200i" />
+      <link rel="stylesheet" href="https://use.typekit.net/zyj0uow.css" />
 
-    <style jsx global>{`
-      .niveau {
-        font-family: 'niveau-grotesk-small-caps', sans-serif;
-      }
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i|Raleway:200,200i" />
 
-      .eaves {
-        font-family: 'mrs-eaves-roman-lining', serif;
-      }
+      <style jsx global>{`
+        .niveau {
+          font-family: 'niveau-grotesk-small-caps', sans-serif;
+        }
 
-      .cormorant {
-        font-family: 'Cormorant Garamond', serif;
-      }
+        .eaves {
+          font-family: 'mrs-eaves-roman-lining', serif;
+        }
 
-      .raleway {
-        font-family: 'Raleway', sans-serif;
-      }
+        .cormorant {
+          font-family: 'Cormorant Garamond', serif;
+        }
 
-      html, body, div#__next {
-        height: 100%;
-      }
-    `}</style>
+        .raleway {
+          font-family: 'Raleway', sans-serif;
+        }
 
-  </Head>
-);
+        html, body, div#__next {
+          height: 100%;
+        }
+      `}</style>
+
+      <style jsx global>{ bodyStyle }</style>
+    </Head>
+  );
+};

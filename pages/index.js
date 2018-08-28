@@ -1,6 +1,7 @@
 import Head from '../components/head';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import Social from '../components/social';
 
 export default () => (
   <div className='container root'>
@@ -14,51 +15,38 @@ export default () => (
         min-height: 100%;
       }
 
-      div.about, div.photography, div.contact, div.projects {
-        padding: 0 10px 10px 10px;
+      div.root p {
+        font-size: 1.2em;
       }
 
-      div.photography h1 {
-        display: block;
-      }
-
-      div.photography img {
-        width: 50%;
-        padding: 5px;
+      div.root p:first-of-type {
+        font-size: 1.8em;
       }
     `}</style>
 
     <div className='row'>
-      <div className='col-md-4'>
+      <div className='col-md-8'>
         <div className='about'>
-          <h1 className='cormorant'>About</h1>
+          <p className='cormorant'>
+            I'm an engineer, photographer, and aspiring lawyer, currently located in Providence, Rhode Island.
+          </p>
 
           <p className='raleway'>
-            I'm an engineer, photographer, and aspiring lawyer, currently located in Providence, Rhode Island.
-            At the moment, I am particularly interested in privacy and security, distributed systems, and machine
-            learning.
+            I am particularly interested in privacy, distributed systems, and machine learning. I'm also a future
+            student at Harvard Law School, and consequently am interested in the intersection of technology and law.
           </p>
 
           <p className='raleway'>
             I'm currently looking for full-time opportunities starting in Fall 2019. If you're working on something
-            cool, let me know at <a href='mailto:ben@benjaminmurphy.me'>ben@benjaminmurphy.me</a>.
+            interesting, let me know at <a href='mailto:ben@benjaminmurphy.me'>ben@benjaminmurphy.me</a>.
           </p>
+
+          <Social />
+
         </div>
-
-        <div className='contact'>
-          <h1 className='cormorant'>Contact</h1>
-        </div>
-      </div>
-
-      <div className='photography col-md-8'>
-        <h1 className='cormorant'>Photography</h1>
-
-        <img src='/static/bamboo.jpg' />
-        <img src='/static/blossoms.jpg' />
       </div>
     </div>
 
     <Footer />
-
   </div>
 );

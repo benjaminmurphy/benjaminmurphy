@@ -9,11 +9,14 @@ export default () => (
         line-height: 30px;
         vertical-align: middle;
         height: 30px;
+        background-color: rgba(100, 100, 100, 0.9);
+        border-radius: 5px 5px 0 0;
       }
 
       span {
         width: 100%;
         text-align: center;
+        color: #aaa;
       }
 
     `}</style>
