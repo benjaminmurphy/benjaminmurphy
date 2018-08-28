@@ -5,14 +5,14 @@ export default () => (
     <title>benjamin murphy</title>
 
     <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossOrigin="anonymous" />
+      rel='stylesheet'
+      href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'
+      integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm'
+      crossOrigin='anonymous' />
 
-    <link rel="stylesheet" href="https://use.typekit.net/zyj0uow.css" />
+    <link rel='stylesheet' href='https://use.typekit.net/zyj0uow.css' />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i|Raleway:200,200i" />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i|Raleway:200,200i' />
 
     <style jsx global>{`
       .niveau {
