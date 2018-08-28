@@ -14,10 +14,7 @@ const images = [
 const firstHalf = images.length / 2;
 
 export default () => (
-  <div className='container root'>
-    <Head renderBackground={false} />
-    <Header />
-
+  <div id='base'>
     <style jsx>{`
       div.root {
         padding-top: 5%;
@@ -44,15 +41,20 @@ export default () => (
       }
     `}</style>
 
-    <div className='row'>
-      <div className='photography col-12'>
-    </div>
-    <div className='row'>
-        <div className='photography col-md-6'>
-          { images.slice(0, firstHalf).map(fn => <img key={ fn } src={ `/static/${fn}` } />) }
-        </div>
-        <div className='photography col-md-6'>
-          { images.slice(firstHalf).map(fn => <img key={ fn } src={ `/static/${fn}` } />) }
+    <div className='container root'>
+      <Head renderBackground={false} />
+      <Header />
+
+      <div className='row'>
+        <div className='photography col-12'>
+      </div>
+      <div className='row'>
+          <div className='photography col-md-6'>
+            { images.slice(0, firstHalf).map(fn => <img key={ fn } src={ `/static/${fn}` } />) }
+          </div>
+          <div className='photography col-md-6'>
+            { images.slice(firstHalf).map(fn => <img key={ fn } src={ `/static/${fn}` } />) }
+          </div>
         </div>
       </div>
     </div>
