@@ -46,15 +46,11 @@ export default () => (
       <Header />
 
       <div className='row'>
-        <div className='photography col-12'>
-      </div>
-      <div className='row'>
-          <div className='photography col-md-6'>
-            { images.slice(0, firstHalf).map(fn => <img key={ fn } src={ `/static/${fn}` } />) }
-          </div>
-          <div className='photography col-md-6'>
-            { images.slice(firstHalf).map(fn => <img key={ fn } src={ `/static/${fn}` } />) }
-          </div>
+        <div className='photography col-md-6'>
+          { images.slice(0, firstHalf).map(fn => <img key={ fn } src={ `/static/${fn}` } />) }
+        </div>
+        <div className='photography col-md-6'>
+          { images.slice(firstHalf).map(fn => <img key={ fn } src={ `/static/${fn}` } />) }
         </div>
       </div>
 
