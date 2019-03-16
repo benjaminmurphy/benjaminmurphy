@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default () => (
   <div className='row'>
     <ul className='niveau'>
-      <li>benjamin murphy</li>
+      <li className='red'>benjamin murphy</li>
       <li><Link href='/'><a>home</a></Link></li>
       <li><Link href='/about'><a>about</a></Link></li>
       <li><Link href='/photography'><a>photography</a></Link></li>

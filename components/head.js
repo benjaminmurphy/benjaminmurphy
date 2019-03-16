@@ -11,7 +11,6 @@ export default () => (
       crossOrigin='anonymous' />
 
     <link rel='stylesheet' href='https://use.typekit.net/zyj0uow.css' />
-
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i|Raleway:200,200i' />
 
     <style jsx global>{`
@@ -31,8 +30,32 @@ export default () => (
         font-family: 'Raleway', sans-serif;
       }
 
+      .isabelline {
+        color: #efefef;
+      }
+
+      .cerulean {
+        color: #0e4177;
+      }
+
+      .red {
+        color: #de1a1a;
+      }
+
+      .charcoal {
+        color: #2c4251;
+      }
+
+      .jet {
+        color: #363537;
+      }
+
       html, body, div#__next, div#base {
         height: 100%;
+      }
+
+      a {
+        color: #0e4177;
       }
     `}</style>
   </Head>
