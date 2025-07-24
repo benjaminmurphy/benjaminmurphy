@@ -1,0 +1,300 @@
+/* Modern CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #fafafa;
+    min-height: 100vh;
+    color: #111111;
+}
+
+/* Container and Layout */
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+/* Hero Section */
+.hero {
+    margin-bottom: 2rem;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: end;
+}
+
+.profile-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: end;
+}
+
+.header-text h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #111111;
+    margin-bottom: 0.25rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.byline {
+    font-size: 1rem;
+    color: #555555;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Social Links */
+.social-links {
+    margin: 2rem 0;
+}
+
+.links-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.links-grid a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #555555;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    transition: color 0.2s ease;
+}
+
+.links-grid a:hover {
+    color: #111111;
+}
+
+.links-grid svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* About Section */
+.about {
+    margin: 2rem 0 4rem 0;
+}
+
+.writing-section p {
+    font-size: 1rem;
+    line-height: 1.65;
+    margin-bottom: 1.3rem;
+    color: #111111;
+    max-width: 65ch;
+}
+
+/* Life Updates Section */
+.life-updates {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.life-updates h2 {
+    font-size: 1.3rem;
+    color: #111111;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+.updates-grid {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.update-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.update-date {
+    font-size: 0.8rem;
+    color: #555555;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    white-space: nowrap;
+    flex-shrink: 0;
+    width: 150px;
+    text-align: right;
+}
+
+.update-content {
+    color: #111111;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.4; transform: translateY(-50%) scale(1); }
+    50% { opacity: 1; transform: translateY(-50%) scale(1.2); }
+}
+
+/* Text Ornament Flourish */
+.flourish-container {
+    text-align: center;
+    margin: 4rem 0;
+    position: relative;
+}
+
+.text-ornament {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #888;
+    position: relative;
+    padding: 0 2rem;
+}
+
+.text-ornament::before,
+.text-ornament::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 2rem;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d0d0d0, transparent);
+    transform: translateY(-50%);
+}
+
+.text-ornament::before {
+    right: 100%;
+    background: linear-gradient(to left, #d0d0d0, transparent);
+}
+
+.text-ornament::after {
+    left: 100%;
+    background: linear-gradient(to right, #d0d0d0, transparent);
+}
+
+/* Profile Photo Enhancement */
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    position: relative;
+    border: 2px solid transparent;
+    background: linear-gradient(135deg, #f5f5f5, #e8e8e8) padding-box,
+                linear-gradient(135deg, #ddd, #bbb) border-box;
+    transition: all 0.3s ease;
+}
+
+/* Subtle text selection styling */
+::selection {
+    background: rgba(17, 17, 17, 0.1);
+    color: #111111;
+}
+
+::-moz-selection {
+    background: rgba(17, 17, 17, 0.1);
+    color: #111111;
+}
+
+/* Enhanced link styling */
+.writing-section p a {
+    color: #111111;
+    text-decoration: none;
+    border-bottom: 1px solid #d0d0d0;
+    transition: border-color 0.2s ease;
+}
+
+.writing-section p.large {
+    font-size: 1.5rem;
+}
+
+.writing-section p a:hover {
+    border-bottom-color: #111111;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 2rem 1.5rem;
+    }
+    
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .header-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .profile-photo {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .links-grid {
+        justify-content: center;
+    }
+    
+    .divider-ornament {
+        width: 40px;
+    }
+    
+    .text-ornament::before,
+    .text-ornament::after {
+        width: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .header-text h1 {
+        font-size: 1.6rem;
+    }
+    
+    .links-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    
+    .section-divider {
+        margin: 2rem 0;
+    }
+    
+    .flourish-container {
+        margin: 3rem 0;
+    }
+}
