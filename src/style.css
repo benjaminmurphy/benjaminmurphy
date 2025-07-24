@@ -37,19 +37,17 @@ body {
     justify-content: end;
 }
 
-.profile-photo {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
-}
-
 .header-text {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     align-items: end;
+}
+
+@media screen and (max-width: 768px) {
+    .header-text {
+        align-items: center;
+    }
 }
 
 .header-text h1 {
@@ -102,7 +100,7 @@ body {
 
 /* About Section */
 .about {
-    margin: 2rem 0 4rem 0;
+    margin: 2rem 0 2rem 0;
 }
 
 .writing-section p {
@@ -111,11 +109,16 @@ body {
     margin-bottom: 1.3rem;
     color: #111111;
     max-width: 65ch;
+    text-align: justify
+}
+
+.writing-section p.no-gap {
+    margin-bottom: 0.3rem;
 }
 
 /* Life Updates Section */
 .life-updates {
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-bottom: 3rem;
 }
 
@@ -147,7 +150,7 @@ body {
     font-weight: 500;
     white-space: nowrap;
     flex-shrink: 0;
-    width: 150px;
+    width: 120px;
     text-align: right;
 }
 
@@ -166,7 +169,7 @@ body {
 /* Text Ornament Flourish */
 .flourish-container {
     text-align: center;
-    margin: 4rem 0;
+    margin: 2rem 0;
     position: relative;
 }
 
@@ -199,7 +202,6 @@ body {
     background: linear-gradient(to right, #d0d0d0, transparent);
 }
 
-/* Profile Photo Enhancement */
 .profile-photo {
     width: 160px;
     height: 160px;
@@ -210,10 +212,8 @@ body {
     border: 2px solid transparent;
     background: linear-gradient(135deg, #f5f5f5, #e8e8e8) padding-box,
                 linear-gradient(135deg, #ddd, #bbb) border-box;
-    transition: all 0.3s ease;
 }
 
-/* Subtle text selection styling */
 ::selection {
     background: rgba(17, 17, 17, 0.1);
     color: #111111;
@@ -230,6 +230,16 @@ body {
     text-decoration: none;
     border-bottom: 1px solid #d0d0d0;
     transition: border-color 0.2s ease;
+}
+
+.writing-section ul {
+    margin-left: 1.5rem;
+    list-style-type: disc;
+    color: #111111;
+}
+
+.writing-section ul li {
+    margin-bottom: 0.5rem;
 }
 
 .writing-section p.large {
@@ -257,8 +267,8 @@ body {
     }
     
     .profile-photo {
-        width: 70px;
-        height: 70px;
+        width: 100px;
+        height: 100px;
     }
     
     .links-grid {
