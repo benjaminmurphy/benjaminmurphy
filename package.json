@@ -10,5 +10,8 @@
   "devDependencies": {
     "vite": "^5.0.0",
     "vite-plugin-handlebars": "^2.0.0"
+  },
+  "dependencies": {
+    "wrangler": "^4.25.1"
   }
 }
